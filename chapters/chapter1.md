@@ -25,7 +25,8 @@
 * In RDMS, keys enforce data integrity. A key is user-defined and forces values in a table to conform to a specified standard.
 
 ## Types of integrity (Page 14)
-* Data integrity refers to the consistency and accuracy of data and table relationships. The following table lists the types of integrity you can use are Entity integrity, Referential integrity, Domain integrity.
+* Data integrity refers to the consistency and accuracy of data and table relationships. 
+The following table lists the types of integrity you can use are Entity integrity, Referential integrity, Domain integrity.
 
 ### Entity integrity (Page 14)
 * If you want each row in a table to be identifiably unique, entity integrity will need to be used.
@@ -37,6 +38,16 @@
 * A not null constraint is used to ensure all values in a column are not null.
 They will be forced to contain a value.
 
-#### The primary key
-* 
+#### The primary key (Page 16)
+* Primary key is used to ensure that all values in column are not null, hence unique and not null
+constraints properties are combined into it.
+* You can create a primary key on multiple columns. This is considered a composite key.
 
+### Referential integrity (Page 18)
+* <strong>Referential integrity</strong> refers to the consistency and accuracy between tables that can be
+  linked together.
+* By having a primary key on the parent table and a foreign key on the child
+  table, you achieve referential integrity.
+* When creating a foreign key constraint, the foreign key must reference a column in another
+  table that is the primary key.
+* The foreign key can maintain three types of table relationships: one-to-one, one-to-many, and many-to-many.
